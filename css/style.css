@@ -166,8 +166,8 @@ button {
     border-radius: 8px;
     margin: 50px;
     background-color: #dfdede;
-    grid-template:
-                "title title" auto
+    grid-template-areas:
+                "title title"
                 "list list";
 }
     .skills-container h1 {
