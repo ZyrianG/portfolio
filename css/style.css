@@ -154,17 +154,30 @@ button {
 
 /* Skills */
 .skills-section {
-    display: flex;
+    display: inline-flex;
     padding: 5vh 0px;
+    margin: 0px;
     background-color:#18181d;
     justify-content: center;
 }
+
+.about-me-container {
+    display: grid;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 20px 30px;
+    width: 30%;
+    background-color: #dfdede;
+}
+    .about-me-container h1 {
+        font-size: 40;
+    }
 
 .skills-container {
     display: grid;
     border: 2px solid black;
     border-radius: 8px;
-    margin: 50px;
+    margin: 20px 0px;
     background-color: #dfdede;
     grid-template-areas:
                 "title title"
@@ -180,7 +193,7 @@ button {
     justify-content: space-around;
     grid-template-columns: auto;
     grid-template-rows: 10% auto;
-    padding: 0px 100px;
+    padding: 0px 40px;
 }
     .skills div {
         padding: 0px 10px;
@@ -197,21 +210,32 @@ button {
     grid-template-columns: auto auto;
 }
 
+.backend {
+    height: 80%;
+}
+
 .skill-icon {
-    text-align: left;
-    padding-right: 10px;
+    justify-items: center;
+    height: 30px;
+    width: 40px;
 }
 
 .skill-text {
-    text-align: left;
+    text-align: right;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 5px;
+    height: 20px;
 }
 
 p i {
     font-size: 26;
     color: #2fb1fc;
-    display: inline-flex;
-    padding: 10px;
+    display: flex;
+    padding: 7px 5px 3px 5px;
     border-radius: 50%;
+    height: 30px;
+    width: 30px;
     background-color: #09071d;
 }
 
@@ -220,11 +244,16 @@ p i {
 }
 
 .projects {
-    color: #c9c9c9;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
     body {
         overflow-x: hidden;
     }
@@ -248,7 +277,7 @@ p i {
         width: 10%;
         transform: translateX(100%);
         transition: 0.5s ease;
-        background-color: #09071d;
+        background-color: #0e0e1a;
     }
 
     .nav-link {
@@ -262,6 +291,18 @@ p i {
 
     .home {
         min-width: 25vh;
+    }
+
+    .about-me-container {
+        width: 90%;
+    }
+
+    .skills-section {
+        display: inline-block;
+    }
+
+    .skills {
+        padding: 0px;
     }
 }
 
