@@ -111,6 +111,15 @@ section div {
 
 /* Home */
 .home-section {
+    background-image:   
+        linear-gradient(
+            rgba(12, 6, 31, 0.856),
+            rgba(18, 34, 122, 0.568)
+        ), 
+        url("../assets/LCB.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     background-color:#1c1b25;
     display: grid;
     padding-right: 30%;
@@ -241,6 +250,7 @@ p i {
 
 .projects-section {
     background-color: #18181d;
+    z-index: -2;
 }
 
 .projects {
@@ -250,6 +260,8 @@ p i {
 
 .card {
     margin: 10px;
+    position: relative;
+    z-index: -1;
 }
 
 
