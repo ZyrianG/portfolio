@@ -188,6 +188,7 @@ button {
     border-radius: 8px;
     margin: 20px 0px;
     background-color: #dfdede;
+    grid-template-rows: 15% auto;
     grid-template-areas:
                 "title title"
                 "list list";
